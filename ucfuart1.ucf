@@ -3,19 +3,8 @@ NET "clk" LOC = "V10" | IOSTANDARD = LVCMOS33;
 
 ## Reset Signal
 NET "reset" LOC = "B8" | IOSTANDARD = LVCMOS33;
+Net "check" LOC = A8 | IOSTANDARD = LVCMOS33; #Bank = 0, pin name = IO_L33N, Sch name = BTNU
 
-## Start Transmit Signal
-NET "start_tx" LOC = "C9" | IOSTANDARD = LVCMOS33;
-
-## Transmit Data Inputs
-NET "tx_data<0>" LOC = "T10" | IOSTANDARD = LVCMOS33;
-NET "tx_data<1>" LOC = "T9" | IOSTANDARD = LVCMOS33;
-NET "tx_data<2>" LOC = "V9" | IOSTANDARD = LVCMOS33;
-NET "tx_data<3>" LOC = "M8" | IOSTANDARD = LVCMOS33;
-NET "tx_data<4>" LOC = "N8" | IOSTANDARD = LVCMOS33;
-NET "tx_data<5>" LOC = "U8" | IOSTANDARD = LVCMOS33;
-NET "tx_data<6>" LOC = "V8"| IOSTANDARD = LVCMOS33;
-NET "tx_data<7>" LOC = "T5" | IOSTANDARD = LVCMOS33;
 
 ## Receive Serial Data Input
 NET "rx_in" LOC = "N17" | IOSTANDARD = LVCMOS33;
@@ -24,11 +13,13 @@ NET "rx_in" LOC = "N17" | IOSTANDARD = LVCMOS33;
 NET "tx_out" LOC = "N18" | IOSTANDARD = LVCMOS33;
 
 ## Received Data Outputs
-NET "rx_data<0>" LOC = "U16" | IOSTANDARD = LVCMOS33;
-NET "rx_data<1>" LOC = "V16" | IOSTANDARD = LVCMOS33;
-NET "rx_data<2>" LOC = "U15" | IOSTANDARD = LVCMOS33;
-NET "rx_data<3>" LOC = "V15" | IOSTANDARD = LVCMOS33;
-NET "rx_data<4>" LOC = "M11" | IOSTANDARD = LVCMOS33;
-NET "rx_data<5>" LOC = "N11" | IOSTANDARD = LVCMOS33;
-NET "rx_data<6>" LOC = "R11" | IOSTANDARD = LVCMOS33;
-NET "rx_data<7>" LOC = "T11" | IOSTANDARD = LVCMOS33;
+NET "rx_data_rr<0>" LOC = "U16" | IOSTANDARD = LVCMOS33;
+NET "rx_data_rr<1>" LOC = "V16" | IOSTANDARD = LVCMOS33;
+NET "rx_data_rr<2>" LOC = "U15" | IOSTANDARD = LVCMOS33;
+NET "rx_data_rr<3>" LOC = "V15" | IOSTANDARD = LVCMOS33;
+NET "rx_data_rr<4>" LOC = "M11" | IOSTANDARD = LVCMOS33;
+Net "rx_data_rr<5>" LOC = "N11" |  IOSTANDARD = LVCMOS33; #Bank = 2, pin name = IO_L15N, Sch name = LD5
+Net "rx_data_rr<6>" LOC = "R11" |  IOSTANDARD = LVCMOS33; #Bank = 2, pin name = IO_L16P, Sch name = LD6
+Net "rx_data_rr<7>" LOC = "T11" |  IOSTANDARD = LVCMOS33; #Bank = 2, pin name = IO_L16N_VREF, Sch name = LD7
+
+
