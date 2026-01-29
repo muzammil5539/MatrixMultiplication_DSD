@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-`include "UartStates.vh"
+`include "../common/UartStates.vh"
 
 module Uart8Receiver (
     input  wire       clk,  // baud rate
