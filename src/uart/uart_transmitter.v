@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-`include "UartStates.vh"
+`include "../common/UartStates.vh"
 
 /*
  * 8-bit UART Transmitter with corrected state transitions and bit handling.

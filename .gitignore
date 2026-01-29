@@ -1,0 +1,97 @@
+# Xilinx ISE/Vivado files
+*.xise
+*.gise
+*.bgn
+*.bit
+*.bld
+*.cmd
+*.lso
+*.mcs
+*.ncd
+*.ngc
+*.ngd
+*.ngm
+*.pcf
+*.prj
+*.ptwx
+*.stx
+*.syr
+*.twr
+*.twx
+*.unroutes
+*.ut
+*.xpi
+*.xst
+*.xwbt
+_ngo/
+_xmsgs/
+xlnx_auto_0_xdb/
+iseconfig/
+.Xil/
+*.jou
+*.log
+*.pb
+*.wdb
+*.csv
+*.html
+*.xml
+*.rpt
+webtalk.jou
+webtalk.log
+vivado*.jou
+vivado*.log
+
+# ModelSim/QuestaSim
+work/
+*.wlf
+*.vstf
+*.mti
+transcript
+vsim.wlf
+vsim_stacktrace.vstf
+
+# VCS
+*.daidir
+*.vpd
+csrc/
+simv
+simv.daidir/
+ucli.key
+
+# Temporary and backup files
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.o
+*.exe
+*.out
+a.out
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# C/C++
+*.d
+*.o
+*.so
+*.a
+*.la
+*.lo
+*.obj
+
+# Project specific
+*.vcd
+*.fst
+*.ghw
